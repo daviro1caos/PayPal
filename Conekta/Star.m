@@ -6,13 +6,13 @@
 //  Copyright © 2016 DanielCompany. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "Star.h"
 
-@interface ViewController ()
+@interface Star ()
 
 @end
 
-@implementation ViewController
+@implementation Star
 
 - (void)viewDidLoad {
     [super viewDidLoad];

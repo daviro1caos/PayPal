@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6543B1791D5F6A09001B4EFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6543B1781D5F6A09001B4EFE /* main.m */; };
 		6543B17C1D5F6A09001B4EFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6543B17B1D5F6A09001B4EFE /* AppDelegate.m */; };
-		6543B17F1D5F6A09001B4EFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6543B17E1D5F6A09001B4EFE /* ViewController.m */; };
+		6543B17F1D5F6A09001B4EFE /* Star.m in Sources */ = {isa = PBXBuildFile; fileRef = 6543B17E1D5F6A09001B4EFE /* Star.m */; };
 		6543B1821D5F6A09001B4EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6543B1801D5F6A09001B4EFE /* Main.storyboard */; };
 		6543B1851D5F6A09001B4EFE /* Conekta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6543B1831D5F6A09001B4EFE /* Conekta.xcdatamodeld */; };
 		6543B1871D5F6A09001B4EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6543B1861D5F6A09001B4EFE /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		6543B1781D5F6A09001B4EFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6543B17A1D5F6A09001B4EFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6543B17B1D5F6A09001B4EFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6543B17D1D5F6A09001B4EFE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6543B17E1D5F6A09001B4EFE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6543B17D1D5F6A09001B4EFE /* Star.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Star.h; sourceTree = "<group>"; };
+		6543B17E1D5F6A09001B4EFE /* Star.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Star.m; sourceTree = "<group>"; };
 		6543B1811D5F6A09001B4EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6543B1841D5F6A09001B4EFE /* Conekta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Conekta.xcdatamodel; sourceTree = "<group>"; };
 		6543B1861D5F6A09001B4EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		6543B1761D5F6A08001B4EFE /* Conekta */ = {
 			isa = PBXGroup;
 			children = (
-				6543B17A1D5F6A09001B4EFE /* AppDelegate.h */,
-				6543B17B1D5F6A09001B4EFE /* AppDelegate.m */,
-				6543B17D1D5F6A09001B4EFE /* ViewController.h */,
-				6543B17E1D5F6A09001B4EFE /* ViewController.m */,
+				6543B1921D5F6A1B001B4EFE /* Main */,
+				6543B1911D5F6A12001B4EFE /* Controllers */,
 				6543B1801D5F6A09001B4EFE /* Main.storyboard */,
 				6543B1861D5F6A09001B4EFE /* Assets.xcassets */,
 				6543B1881D5F6A09001B4EFE /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				6543B1781D5F6A09001B4EFE /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6543B1911D5F6A12001B4EFE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6543B17E1D5F6A09001B4EFE /* Star.m */,
+				6543B17D1D5F6A09001B4EFE /* Star.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6543B1921D5F6A1B001B4EFE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6543B17A1D5F6A09001B4EFE /* AppDelegate.h */,
+				6543B17B1D5F6A09001B4EFE /* AppDelegate.m */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6543B17F1D5F6A09001B4EFE /* ViewController.m in Sources */,
+				6543B17F1D5F6A09001B4EFE /* Star.m in Sources */,
 				6543B1851D5F6A09001B4EFE /* Conekta.xcdatamodeld in Sources */,
 				6543B17C1D5F6A09001B4EFE /* AppDelegate.m in Sources */,
 				6543B1791D5F6A09001B4EFE /* main.m in Sources */,
