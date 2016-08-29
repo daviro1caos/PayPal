@@ -14,9 +14,12 @@
 		6543B1851D5F6A09001B4EFE /* Conekta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6543B1831D5F6A09001B4EFE /* Conekta.xcdatamodeld */; };
 		6543B1871D5F6A09001B4EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6543B1861D5F6A09001B4EFE /* Assets.xcassets */; };
 		6543B18A1D5F6A09001B4EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6543B1881D5F6A09001B4EFE /* LaunchScreen.storyboard */; };
+		65F0EC771D73B1BF00A6D27D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 65F0EC761D73B1BF00A6D27D /* Podfile */; };
+		FCBFFECE571612BBCA0AB73C /* Pods_Conekta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC471793CF23EF8BB10B6DF2 /* Pods_Conekta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09D4ABC192B1EF1D14F75AF1 /* Pods-Conekta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conekta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conekta/Pods-Conekta.debug.xcconfig"; sourceTree = "<group>"; };
 		6543B1741D5F6A08001B4EFE /* Conekta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conekta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6543B1781D5F6A09001B4EFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6543B17A1D5F6A09001B4EFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		6543B1861D5F6A09001B4EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6543B1891D5F6A09001B4EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6543B18B1D5F6A09001B4EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F0EC761D73B1BF00A6D27D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		C57E2E7021A4AB372BB4F852 /* Pods-Conekta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conekta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conekta/Pods-Conekta.release.xcconfig"; sourceTree = "<group>"; };
+		EC471793CF23EF8BB10B6DF2 /* Pods_Conekta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conekta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBFFECE571612BBCA0AB73C /* Pods_Conekta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6230AD1588AA91A88F934FEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC471793CF23EF8BB10B6DF2 /* Pods_Conekta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6543B16B1D5F6A08001B4EFE = {
 			isa = PBXGroup;
 			children = (
+				65F0EC761D73B1BF00A6D27D /* Podfile */,
 				6543B1761D5F6A08001B4EFE /* Conekta */,
 				6543B1751D5F6A08001B4EFE /* Products */,
+				F21AB618E8767343470F018B /* Pods */,
+				6230AD1588AA91A88F934FEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +116,15 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		F21AB618E8767343470F018B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09D4ABC192B1EF1D14F75AF1 /* Pods-Conekta.debug.xcconfig */,
+				C57E2E7021A4AB372BB4F852 /* Pods-Conekta.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6543B18E1D5F6A09001B4EFE /* Build configuration list for PBXNativeTarget "Conekta" */;
 			buildPhases = (
+				8CA7321582B6CE57DD368F8E /* [CP] Check Pods Manifest.lock */,
 				6543B1701D5F6A08001B4EFE /* Sources */,
 				6543B1711D5F6A08001B4EFE /* Frameworks */,
 				6543B1721D5F6A08001B4EFE /* Resources */,
+				EC1967359A6102C2FF024327 /* [CP] Embed Pods Frameworks */,
+				556BF822E39672CDA6D1CFA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,11 +187,60 @@
 			files = (
 				6543B18A1D5F6A09001B4EFE /* LaunchScreen.storyboard in Resources */,
 				6543B1871D5F6A09001B4EFE /* Assets.xcassets in Resources */,
+				65F0EC771D73B1BF00A6D27D /* Podfile in Resources */,
 				6543B1821D5F6A09001B4EFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		556BF822E39672CDA6D1CFA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conekta/Pods-Conekta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CA7321582B6CE57DD368F8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC1967359A6102C2FF024327 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conekta/Pods-Conekta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6543B1701D5F6A08001B4EFE /* Sources */ = {
@@ -281,6 +360,7 @@
 		};
 		6543B18F1D5F6A09001B4EFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D4ABC192B1EF1D14F75AF1 /* Pods-Conekta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Conekta/Info.plist;
@@ -292,6 +372,7 @@
 		};
 		6543B1901D5F6A09001B4EFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C57E2E7021A4AB372BB4F852 /* Pods-Conekta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Conekta/Info.plist;
@@ -320,6 +401,7 @@
 				6543B1901D5F6A09001B4EFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

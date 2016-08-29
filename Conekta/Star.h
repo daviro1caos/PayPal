@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PayPalMobile.h"
 
-@interface Star : UIViewController
+@interface Star : UIViewController<PayPalPaymentDelegate>
+
 
 
 @end
